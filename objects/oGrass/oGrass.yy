@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "World",
-    "path": "folders/Objects/World.yy",
+    "name": "Objects",
+    "path": "folders/Objects/World/Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "oGrass",

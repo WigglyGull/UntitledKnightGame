@@ -31,6 +31,9 @@ view_h_half = gameHeight/2;
 xTo = xstart;
 yTo = ystart;
 
+yBoing = 0;
+yBoingSpd = 0;
+
 x = follow.x;
 y = follow.y;
 UpdateCam();

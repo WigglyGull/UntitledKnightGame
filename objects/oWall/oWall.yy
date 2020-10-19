@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "World",
-    "path": "folders/Objects/World.yy",
+    "name": "Walls",
+    "path": "folders/Objects/World/Walls.yy",
   },
   "resourceVersion": "1.0",
   "name": "oWall",

@@ -1,16 +1,19 @@
-keyLeft = keyboard_check(ord("A"));
-keyRight = keyboard_check(ord("D"));
-keyDown = keyboard_check(ord("S"))
+keyLeft = key(ord("A"));
+keyRight = key(ord("D"));
+keyDown = key(ord("S"))
 keyJump = keyboard_check_pressed(ord("W"));
-keyJumpHeld = keyboard_check(ord("W"));
+keyJumpHeld = key(ord("W"));
 
 var move = (keyRight - keyLeft) * walksp;
-hsp = approach(hsp, move, 0.4);
+hsp = approach(hsp, move, 0.2);
 vsp += grv;
 
 var onFloor = place_meeting(x, y+1, oWall);
+if (move != 0) isRunning = true;
+else isRunning = false;
 
 if(onFloor && keyJump){
+    instance_create_layer(x, y+20, "Player", oJumpFx);
     vsp = jumpAmt;
     yscale = 1.5;
     xscale = .75;
@@ -26,7 +29,6 @@ if(place_meeting(x+hsp, y, oWall)){
     hsp = 0;
 }
 x += hsp;
-
 if(place_meeting(x, y+vsp, oWall)){
     while(!place_meeting(x, y+sign(vsp), oWall)){
         y += sign(vsp);
@@ -49,6 +51,17 @@ if(hsp != 0) flipped = sign(hsp);
 xscale = lerp(xscale, 1, .2);
 yscale = lerp(yscale, 1, .2);
 if(place_meeting(x, y+1, oWall) && !place_meeting(x, yprevious+1, oWall)){
-    yscale = .80;
+    instance_create_layer(x, y+20, "Player", oLandFx);
+    oCamera.yBoingSpd = 0.6;
+    yscale = .75;
     xscale = 1.25;
 }
+
+randomize();
+if(isRunning && onFloor){
+    runVfxTimer -= 1;
+    if(runVfxTimer <= 0){
+        instance_create_layer(x, y+4, "Player", oRunFx);
+        runVfxTimer = random_range(10, 20);
+    }
+}else runVfxTimer = random_range(10, 20);

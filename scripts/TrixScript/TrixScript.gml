@@ -90,8 +90,14 @@ function sleep(_ms) {
 	while (current_time < tt) { /* loop */ }
 }
 
-function cursed_cat() {
-    image_stock = sprite_add("https://thiscatdoesnotexist.com/", 0, 0, 0, 0, 0);
-    
-    return image_stock;
+function SetRandSprite(spriteNum){
+	randomize();
+	rockNum = irandom(spriteNum);
+	xscale = irandom(1);
+
+	image_speed = 0;
+	image_index = rockNum;
+
+	if(xscale = 0) image_xscale = -1;
+	else image_xscale = 1;	
 }
