@@ -5,7 +5,7 @@ keyJump = keyboard_check_pressed(ord("W"));
 keyJumpHeld = key(ord("W"));
 
 var move = (keyRight - keyLeft) * walksp;
-hsp = approach(hsp, move, 0.2);
+hsp = approach(hsp, move, 0.25);
 vsp += grv;
 
 var onFloor = place_meeting(x, y+1, oWall);
@@ -52,7 +52,6 @@ xscale = lerp(xscale, 1, .2);
 yscale = lerp(yscale, 1, .2);
 if(place_meeting(x, y+1, oWall) && !place_meeting(x, yprevious+1, oWall)){
     instance_create_layer(x, y+20, "Player", oLandFx);
-    oCamera.yBoingSpd = 0.6;
     yscale = .75;
     xscale = 1.25;
 }

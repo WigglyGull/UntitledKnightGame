@@ -1,6 +1,6 @@
 if(instance_exists(follow)){
     xTo = follow.x;
-    yTo = follow.y;
+    yTo = follow.y-10;
 }
 
 x += (xTo - x)/10;
