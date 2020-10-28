@@ -33,6 +33,8 @@ yTo = ystart;
 
 yBoing = 0;
 yBoingSpd = 0;
+xBoing = 0;
+xBoingSpd = 0;
 
 x = follow.x;
 y = follow.y;

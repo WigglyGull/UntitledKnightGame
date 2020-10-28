@@ -1,13 +1,13 @@
 {
   "spriteId": {
     "name": "sPlayerIdle",
-    "path": "sprites/sPlayerIdle/sPlayerIdle.yy",
+    "path": "sprites/sPlayerIdle/sPlayerIdle.yy"
   },
   "solid": false,
   "visible": true,
   "spriteMaskId": {
     "name": "sPlayerIdleSword",
-    "path": "sprites/sPlayerIdleSword/sPlayerIdleSword.yy",
+    "path": "sprites/sPlayerIdleSword/sPlayerIdleSword.yy"
   },
   "persistent": false,
   "parentObjectId": null,
@@ -24,18 +24,71 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"parent":{"name":"oPlayer","path":"objects/oPlayer/oPlayer.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {
+      "isDnD": false,
+      "eventNum": 0,
+      "eventType": 0,
+      "collisionObjectId": null,
+      "parent": {
+        "name": "oPlayer",
+        "path": "objects/oPlayer/oPlayer.yy"
+      },
+      "resourceVersion": "1.0",
+      "name": "",
+      "tags": [],
+      "resourceType": "GMEvent"
+    },
+    {
+      "isDnD": false,
+      "eventNum": 0,
+      "eventType": 3,
+      "collisionObjectId": null,
+      "parent": {
+        "name": "oPlayer",
+        "path": "objects/oPlayer/oPlayer.yy"
+      },
+      "resourceVersion": "1.0",
+      "name": "",
+      "tags": [],
+      "resourceType": "GMEvent"
+    },
+    {
+      "isDnD": false,
+      "eventNum": 0,
+      "eventType": 8,
+      "collisionObjectId": null,
+      "parent": {
+        "name": "oPlayer",
+        "path": "objects/oPlayer/oPlayer.yy"
+      },
+      "resourceVersion": "1.0",
+      "name": "",
+      "tags": [],
+      "resourceType": "GMEvent"
+    },
+    {
+      "isDnD": false,
+      "eventNum": 0,
+      "eventType": 12,
+      "collisionObjectId": null,
+      "parent": {
+        "name": "oPlayer",
+        "path": "objects/oPlayer/oPlayer.yy"
+      },
+      "resourceVersion": "1.0",
+      "name": "",
+      "tags": [],
+      "resourceType": "GMEvent"
+    }
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
     "name": "Characters",
-    "path": "folders/Objects/Characters.yy",
+    "path": "folders/Objects/Characters.yy"
   },
   "resourceVersion": "1.0",
   "name": "oPlayer",
   "tags": [],
-  "resourceType": "GMObject",
+  "resourceType": "GMObject"
 }
